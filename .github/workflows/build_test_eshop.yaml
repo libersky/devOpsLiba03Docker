@@ -20,7 +20,7 @@ jobs:
           node-version: 10
 
       - name: Cache node modules
-        uses: action/casche@v2
+        uses: action/cache@v2
         with:
           path: node_modules
           key: node_modules-${{ hashFiles('**/package-log.json') }}
